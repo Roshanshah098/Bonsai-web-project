@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<head>
+    <title>feedback form</title>
+    <link rel="stylesheet" href="CSS files/header.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: sans sans-serif;
+            background-color: rgb(0, 0, 0);
+            overflow-x: hidden;
+            background-image: url(image/BACKGround.png);
+            background-size: 110% 90%;
+            background-repeat: no-repeat;
+        }
+
+        .feedback1 {
+            text-align: center;
+            position: relative;
+            right: 350px;
+            padding-bottom: 10px;
+            color: rgb(0, 0, 0);
+            font-family: courgette;
+            font-size: 40px;
+            font-weight: 1000;
+            text-shadow: 3px 3px 3px rgb(255, 255, 255), -3px -3px 3px rgb(255, 255, 255);
+        }
+
+        .section_form {
+            display: flex;
+            margin-top: 30px;
+            margin-left: 20px;
+            margin-bottom: 30px;
+
+        }
+
+        textarea {
+            font-size: 18px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 3%;
+            margin-top: 10px;
+        }
+
+        .section_form .for_form_top {
+            display: flex;
+            color: rgb(255, 255, 255);
+            background-color: rgb(48, 80, 82);
+            border-radius: 2%;
+            display: flex;
+            position: relative;
+            left: 2%;
+            padding-left: 15px;
+            width: 40%;
+            margin-right: 50px;
+        }
+
+
+        p {
+            font-size: 20px;
+            color: bisque;
+        }
+
+        button {
+            text-align: center;
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(11, 168, 103);
+            width: 100px;
+            border-radius: 10px;
+            outline: none;
+            cursor: pointer;
+            margin-bottom: 15px;
+        }
+
+        .whitebox {
+            margin-top: 20px;
+            background-color: rgb(255, 255, 255);
+            border: 20px;
+            border-radius: 5px;
+            height: 25px;
+            width: 200px;
+            font-size: 14px;
+            font-weight: bold;
+            margin: 20px;
+            text-align: justify;
+        }
+
+
+        .section_form .image_slider {
+            display: flex;
+            color: aqua;
+            background-color: black;
+            border-radius: 2%;
+            display: flex;
+            position: relative;
+            width: 60%;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- These codes are for header -->
+    <div class="hero">
+        <div class="navbar">
+            <!-- adding logo for the navigation bar -->
+            <img class="logo" src="image/logo.png" alt="">
+            <!-- these are our diffrent pages internal links  -->
+            <ul class="shubham">
+                <li><a href="Home_page.html">Home</a></li>
+                <li><a href="Proudcts_page.html">Products</a></li>
+                <li><a href="Blog_page.html">Blog</a></li>
+                <li><a href="Research_page.html">Research</a></li>
+                <li><a href="Feedback_form.html">Feedback</a></li>
+                <li><a href="About_ us.html">About us</a></li>
+
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- Form Starting -->
+    <h1 class="feedback1">
+        Feedback Form
+    </h1>
+    <div class=section_form>
+
+        <div class="for_form_top">
+            <form name="messageForm" onsubmit="validateForm()">
+
+                <p><input type="text" name="fname" placeholder="Name" class="whitebox">
+                    <input type="text" name="email" placeholder="Email" class="whitebox">
+                </p>
+
+                <input type="radio" name="gender" value="Male">
+                <label for="Male">Male</label>
+                <br>
+                <input Female type="radio" name="gender" value="Female">
+                <label for="Female">Female</label>
+                <br>
+
+                <p>Is this your first visit to our website?</p>
+                <input type="radio" name="visit" value="Yes">
+                <label for="Yes">Yes</label>
+                <br>
+                <input type="radio" name="visit" value="No">
+                <label for="No">No</label>
+                <br>
+
+                <p>Where you able to find what you need?</p>
+                <input type="radio" name="found" value="Yes">
+                <label for="Yes">Yes</label>
+                <br>
+                <input type="radio" name="found" value="No">
+                <label for="No">No</label>
+                <br>
+
+                <p>How easy is to find information on the site?</p>
+                <input type="radio" name="difficulty" value="Easy">
+                <label for="Easy">Easy</label>
+                <br>
+                <input type="radio" name="difficulty" value="Average">
+                <label for="Average">Average</label>
+                <br>
+                <input type="radio" name="difficulty" value="Hard">
+                <label for="Hard">Hard</label>
+                <br>
+                <p>Please provide any additional comments or suggestions. <br><textarea name="message" rows="5"
+                        cols="40"
+                        placeholder="Please suggest us some of your beautiful ideas on which we can work in future.Thank You!!!"></textarea>
+                </p>
+                <p><button>Submit</button></p>
+
+            </form>
+        </div>
+        <!-- form part ends here -->
+
+    </div>
+    <!-- image slider part starts -->
+
+    <!-- Starting Footer -->
+    <section class="footerr">
+
+        <footer class="section-p1">
+            <!-- Adding logo for footer -->
+            <div class="logo">
+                <img class="logo" src="image/logo.png" alt="">
+            </div>
+            <!-- adding some of the headings  for footer which include diffrent links -->
+            <div class="col1">
+                <u>
+                    <h2>About </h2>
+                </U>
+                <a href="#">Contact Us</a>
+                <a href="About_ us.html">About Us</a>
+                <a href="Blog_page.html">Blog</a>
+                <a href="Research_page.html">Research</a>
+                <a href="#">Gallery</a>
+            </div>
+            <!-- adding the headings  for footer which include diffrent links related to our payment and return system and help-->
+            <div class="col2">
+                <u>
+                    <h2>Help </h2>
+                </u>
+                <a href="#">Payment</a>
+                <a href="Proudcts_page.html">Products</a>
+                <a href="Feedback_form.html">Feedback</a>
+                <a href="#">Return Policy</a>
+            </div>
+
+            <!-- adding some of the headings  for footer which include social media links -->
+            <div class="col3">
+                <u>
+                    <h2>Follow us</h2>
+                </u>
+                <a href="https://www.facebook.com/">Facebook</a>
+                <a href="https://www.instagram.com/">Instagram</a>
+                <a href="https://twitter.com/">Twitter</a>
+                <a href="https://www.youtube.com/">Youtube</a>
+            </div>
+        </footer>
+    </section>
+
+    <script>
+        // script for
+        function validateForm() {
+            var fname = document.forms["messageForm"]["1"].value;
+            var email = document.forms["messageForm"]["email"].value;
+            var gender = document.forms["messageForm"]["gender"].value;
+            var visit = document.forms["messageForm"]["visit"].value;
+            var found = document.forms["messageForm"]["found"].value;
+            var difficulty = document.forms["messageForm"]["difficulty"].value;
+            var message = document.forms["messageForm"]["message"].value;
+            if (fname == "" || email == "" || message == "") {
+                alert("Empty fields found. Please fill the form.");
+            }
+
+            else {
+                alert("Thank you for the feedback.");
+            }
+        }
+        // script for image slider
+        var images = ['a.png', 'b.jpg', 'c.jpg', 'd.jpg', 'e.jpeg'];
+
+        var x = 0;
+        var imgs = document.getElementById('img');
+        //The setInterval() calls a function at theintervals (in milliseconds). 
+        setInterval(slider, 5000);
+
+        function slider() {
+
+            if (x < images.length) {
+                x = x + 1;
+            }
+
+            else {
+                x = 1;
+            }
+
+
+            imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+        }
+    </script>
+
+
+</body>
+
+</html>

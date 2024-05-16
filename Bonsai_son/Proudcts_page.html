@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Product Page</title>
+    <link rel="stylesheet" href="css files/header.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        body {
+            margin: 0;
+            font-family: poppins;
+            background-image: url(image/2.jpg);
+        }
+
+        /* This is used to make a particualar box for every products so that every products could be shown in diffrent boxes */
+        .content {
+            width: 20%;
+            /*Using width for determing box size*/
+            margin: 15px;
+            /*Using Margin for determing space between the content boxes */
+            box-sizing: border-box;
+            float: left;
+            text-align: center;
+            border-radius: 20px;
+            cursor: pointer;
+            padding-top: 10px;
+            box-shadow: 0 14px 28px rgb(171, 167, 167),
+                0 8px 10px rgb(255, 255, 255);
+            transition: .10s;
+            background: #c1e6e2;
+        }
+
+        /* styling for  */
+        .content:hover {
+            box-shadow: 0 3px 6px rgb(0, 0, 0), 0 3px 6px rgb(0, 0, 0);
+            transform: translate(0px, -8px);
+        }
+
+        h3 {
+            text-align: center;
+            font-size: 30px;
+            margin: 0;
+            padding-top: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .gallery img,
+        .gallery2 img {
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            margin: 0 auto;
+            display: block;
+
+        }
+
+        .h2 .pro_head {
+            color: rgb(0, 0, 0);
+            font-family: Courgette;
+            font-weight: 800;
+        }
+
+        h5 {
+            font-size: 25px;
+            text-align: center;
+            padding-top: 5px;
+            color: rgb(0, 0, 0);
+            margin: 10;
+        }
+
+        .h5 s {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 16px;
+            color: rgb(0, 0, 0);
+        }
+
+        h7 {
+            font-size: 20px;
+            text-align: center;
+            margin-top: 0px;
+            color: rgb(243, 0, 0);
+        }
+
+        .products {
+            margin-top: 0 auto 90px;
+            text-align: center;
+            position: relative;
+            line-height: 60px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            cursor: default;
+
+        }
+
+        .products::after {
+            content: '';
+            background: rgb(11, 168, 103);
+            width: 140px;
+            height: 5px;
+            border-radius: 5px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .gallery,
+        .gallery2 {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin: 50px;
+            margin-right: 0px;
+            margin-left: 0px;
+            margin-top: 0px;
+
+            height: 35rem;
+        }
+
+
+        /*  */
+
+        button.buy {
+            text-align: center;
+            font-size: 25px;
+            color: rgb(255, 254, 249);
+            width: 100%;
+            padding: 15px;
+            border: 0;
+            outline: none;
+            cursor: pointer;
+            margin-top: 5px;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+
+        .buy {
+            background: rgb(11, 168, 103);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- These codes are for header -->
+    <div class="hero">
+        <div class="navbar">
+            <!-- adding logo for the navigation bar -->
+            <img class="logo" src="image/logo.png" alt="">
+            <!-- these are our diffrent pages internal links  -->
+            <ul class="shubham">
+                <li><a href="Home_page.html">Home</a></li>
+                <li><a href="Proudcts_page.html">Products</a></li>
+                <li><a href="Blog_page.html">Blog</a></li>
+                <li><a href="Research_page.html">Research</a></li>
+                <li><a href="Feedback_form.html">Feedback</a></li>
+                <li><a href="About_ us.html">About us</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Creating Products page -->
+
+    <div class="products">
+        <h2 class="pro_head">PRODUCTS</h2>
+    </div>
+
+    <section class="gallery">
+        <!-- First Product -->
+        <div class="content">
+            <a href="single_detailed_pages/Azalea.html">
+                <img src="image/azalea1.png" alt="Azalea">
+                <h3>Azalea</h3>
+                <h5>$200.00 </h5>
+                <h7><s>$400.00</s> <b style="color: rgb(255, 0, 0);">50%off</b><br>
+                    <b>Free Delivery !!!</b>
+                </h7>
+                <button class="buy">Buy Now</button>
+            </a>
+        </div>
+
+        <!-- Second Product -->
+        <div class="content">
+            <a href="single_detailed_pages/Ficus.html">
+                <img src="image/Ficus.png" alt="Ficus">
+                <h3>Ficus Bonsai</h3>
+                <h5>$300.00 </h5>
+                <h7><s>$400</s> <b style="color: rgb(255, 0, 0);">25%off</b><br>
+                    <b>Free Delivery !!!</b>
+                </h7>
+                <button class="buy">Buy Now</button>
+            </a>
+        </div>
+
+
+        <!-- Third Product -->
+        <div class="content">
+            <a href="single_detailed_pages/Juniper.html">
+                <img src="image/Juniper.png" alt="Juniper">
+                <h3>Juniper Bonsai</h3>
+                <h5>$120.00 </h5>
+                <h7><s>$400</s> <b style="color: rgb(255, 0, 0);">70%off</b><br>
+                    <b>Free Delivery !!!</b>
+                </h7>
+                <button class="buy">Buy Now</button>
+            </a>
+        </div>
+
+
+        <!-- Fourth Product -->
+        <div class="content">
+            <a href="single_detailed_pages/Chinese.html">
+                <img src="image/chinese-elmm.png" alt="chinese-elm">
+                <h3>Chinese elm</h3>
+                <h5>$200.00 </h5>
+                <h7><s>$500</s> <b style="color: rgb(255, 0, 0);">60%off</b><br>
+                    <b>Free Delivery !!!</b>
+                </h7>
+                <button class="buy">Buy Now</button>
+            </a>
+        </div>
+
+    </section>
+
+    <section class="gallery2">
+        <!-- Fifth Product -->
+        <div class="content">
+            <a href="single_detailed_pages/Japnese.html">
+                <img src="image/maple.png" alt="Japanese Maple">
+                <h3>Japanese Maple</h3>
+                <h5>$175.00 </h5>
+                <h7><s>$350</s> <b style="color: rgb(255, 0, 0);">50%off</b><br>
+                    <b>Free Delivery !!!</b>
+                </h7>
+                <button class="buy">Buy Now</button>
+            </a>
+        </div>
+
+
+        <!-- Sixth Product -->
+        <div class="content">
+            <a href="single_detailed_pages/Dwarf.html">
+                <img src="image/jade.png" alt="Dwarf">
+                <h3>Dwarf jade</h3>
+                <h5>$120.00 </h5>
+                <h7><s>$200</s> <b style="color: rgb(255, 0, 0);">40%off</b><br>
+                    <b>Free Delivery !!!</b>
+                </h7>
+                <button class="buy">Buy Now</button>
+            </a>
+        </div>
+
+
+        <!-- Seventh Product -->
+        <div class="content">
+            <a href="single_detailed_pages/serissa.html">
+                <img src="image/Serissa.png" alt="Serissa">
+                <h3>Serissa</h3>
+                <h5>$80.00 </h5>
+                <h7><s>$250</s> <b style="color: rgb(255, 0, 0);">68%off</b><br>
+                    <b>Free Delivery !!!</b>
+                </h7>
+                <button class="buy">Buy Now</button>
+            </a>
+        </div>
+
+        <!-- Eighth Product -->
+        <div class="content">
+            <a href="single_detailed_pages/Spruce.html">
+                <img src="image/Spruce.png" alt="Spruce">
+                <h3>Spruce</h3>
+                <h5>$121.00 </h5>
+                <h7><s>$220</s> <b style="color: rgb(255, 0, 0);">45%off</b><br>
+                    <b>Free Delivery !!!</b>
+                </h7>
+                <button class="buy">Buy Now</button>
+            </a>
+        </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- Starting Footer -->
+    <section class="footerr">
+
+        <footer class="section-p1">
+            <!-- Adding logo for footer -->
+            <div class="logo">
+                <img class="logo" src="image/logo.png" alt="">
+            </div>
+            <!-- adding some of the headings  for footer which include diffrent links -->
+            <div class="col1">
+                <u>
+                    <h2>About </h2>
+                </U>
+                <a href="#">Contact Us</a>
+                <a href="About_ us.html">About Us</a>
+                <a href="Blog_page.html">Blog</a>
+                <a href="Research_page.html">Research</a>
+                <a href="#">Gallery</a>
+            </div>
+            <!-- adding the headings  for footer which include diffrent links related to our payment and return system and help-->
+            <div class="col2">
+                <u>
+                    <h2>Help </h2>
+                </u>
+                <a href="#">Payment</a>
+                <a href="Proudcts_page.html">Products</a>
+                <a href="Feedback_form.html">Feedback</a>
+                <a href="#">Return Policy</a>
+            </div>
+
+            <!-- adding some of the headings  for footer which include social media links -->
+            <div class="col3">
+                <u>
+                    <h2>Follow us</h2>
+                </u>
+                <a href="https://www.facebook.com/">Facebook</a>
+                <a href="https://www.instagram.com/">Instagram</a>
+                <a href="https://twitter.com/">Twitter</a>
+                <a href="https://www.youtube.com/">Youtube</a>
+            </div>
+        </footer>
+    </section>
+
+
+</body>
+
+</html>

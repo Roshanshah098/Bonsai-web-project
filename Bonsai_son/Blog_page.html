@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en>
+  <head>
+        <meta charset=" utf=8">
+<title> Blog </title>
+<!-- <link href="style.css" rel="stylesheet"></a> -->
+<link rel="stylesheet" href="CSS files/header.css">
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        font-family: poppins;
+        box-sizing: border-box;
+    }
+
+    /* determining background for body */
+    body {
+        display: flex;
+        flex-direction: column;
+        background-image: url("image/2.jpg");
+    }
+
+    /* Styling for overall page */
+    #blog {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px;
+    }
+
+    /* Styling for technology and  main heading  */
+    .blog-heading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /* Styling for heading of page */
+    .blog-heading span {
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        border-style: inherit;
+        background-color: rgb(0, 0, 0);
+        font-family: Courgette;
+        font-size: 35px;
+        border-radius: 10px;
+    }
+
+    /* Styling for heading named technology */
+    .blog-heading h3 {
+        font-size: 25px;
+        color: rgb(0, 0, 0);
+        padding: 20px;
+        font-weight: bolder;
+        font-weight: 800;
+    }
+
+    /* Styling for technology text */
+    .blog-heading h4 {
+        font-size: 20px;
+        font-weight: 600px;
+        color: rgb(0, 0, 0);
+        text-align: justify;
+    }
+
+    /* Styling for whole page */
+    .blog-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0px;
+        flex-wrap: wrap;
+    }
+
+    /* Styling for positive and negative impact box */
+    .blog-box {
+        width: 400px;
+        background-color: #35ada7fb;
+        border: 2px solid #000000;
+        margin: 20px;
+        border-radius: 20px;
+    }
+
+    /* Styling for positive and negative impact image */
+    .blog-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 20px;
+    }
+
+    /* Styling for positive and negative impact text */
+    .blog-text {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Styling for positive and negative impact heading */
+    .blog-text .blog-title {
+        font-size: 25px;
+        font-weight: 900;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding-bottom: 10px;
+
+    }
+
+    /* Styling for positive and negative impact heading hover */
+    .blog-text .blog-title:hover {
+        color: rgb(0, 0, 0);
+        transition: all ease 0.3s;
+    }
+
+    /* Styling for positive and negative impact text */
+    .blog-text p {
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        overflow: hidden;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    /* Styling for impact of technology heading.*/
+    .blog-impact {
+        display: flex;
+        flex-direction: column;
+        color: rgb(0, 0, 0);
+        align-items: center;
+        font-size: 1.4rem;
+        font-weight: 600;
+
+    }
+
+    /* Styling for imapct of technology text*/
+    .blog-impact p {
+        display: flex;
+        flex-direction: column;
+        color: rgb(0, 0, 0);
+        align-items: center;
+        font-size: 20px;
+        text-align: justify;
+        font-weight: 600;
+    }
+
+    /* Styling for overall conclusion text*/
+    .blog-overall_conclusion {
+        display: flex;
+        flex-direction: column;
+        color: rgb(0, 0, 0);
+        align-items: center;
+        font-size: 20px;
+        font-weight: 600;
+        text-align: justify;
+    }
+</style>
+</head>
+
+<body>
+
+    <!-- These codes are for header -->
+    <div class="hero">
+        <div class="navbar">
+            <!-- adding logo for the navigation bar -->
+            <img class="logo" src="image/logo.png" alt="">
+            <!-- these are our diffrent pages internal links  -->
+            <ul class="shubham">
+                <li><a href="Home_page.html">Home</a></li>
+                <li><a href="Proudcts_page.html">Products</a></li>
+                <li><a href="Blog_page.html">Blog</a></li>
+                <li><a href="Research_page.html">Research</a></li>
+                <li><a href="Feedback_form.html">Feedback</a></li>
+                <li><a href="About_ us.html">About us</a></li>
+
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- Blog Page begins -->
+    <!-- creating a section named blog -->
+    <section id="blog">
+        <!-- creating a div box named blog-heading for writing about technology -->
+        <div class="blog-heading">
+            <span>Welcome to the blog</span>
+            <!-- Addding sub-heading  -->
+            <h3> Technology</h3>
+            <!-- Description about technology -->
+            <h4>Technology is the application of scientific knowledge to the practical aims of human life or,
+                as it is sometimes phrased, to the change and manipulation of the human environment.
+                The word technology may also mean the product of such an endeavor
+                The use of technology is widely prevalent in medicine, science, industry, communication, transportation,
+                and daily life.
+                Technologies include physical objects like utensils or machines and intangible tools such as software.
+                Many technological advancements have led to societal changes.
+                The earliest known technology is the stone tool, used in the prehistoric era,followed by fire use,
+                which contributed to the growth of the human brain and the development of language in the Ice Age.
+                The invention of the wheel in the Bronze Age enabled wider travel and the creation of more complex
+                machines.
+                Recent technological developments, including the printing press, the telephone,
+                and the Internet have lowered communication barriers and ushered in the knowledge economy.</h4>
+        </div>
+        <!-- end of technology part -->
+        <!-- Creating a new div box for writing about poitive technology impact on us -->
+        <div class="blog-container">
+            <div class="blog-box">
+
+                <!-- creating a div box for keeping image -->
+                <div class="blog-img">
+
+                    <!-- inserting image for positive impact-->
+                    <img src="image/positive_impact.jpg" alt="positive_impact">
+                </div>
+
+                <!-- Creating new div box for positive impact text part only -->
+                <div class="blog-text">
+
+                    <!-- creating title for positive impact of technology with hyper linked -->
+                    <a href="https://www.brainspire.com/blog/positive-effects-of-technology-making-everyday-life-better"
+                        class="
+                        blog-title">Positive Impact of Technology</a>
+
+                    <!-- Writing about positive impact of technology  -->
+                    <p>Technology has brought immense advancements and improvements to our daily lives. It has made
+                        communication and access to information more convenient and accessible. Technology has also
+                        enabled greater connectivity between people, allowing for easier collaboration and the sharing
+                        of
+                        ideas. It has also improved
+                        healthcare, education, and has created new job opportunities in the tech industry.
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- Creating a new div box for writing about negative technology impact on us -->
+            <div class="blog-box">
+                <div class="blog-img">
+                    <!-- adding image for negative impact -->
+                    <a href="#"> <img src="image/negative impact .png" alt="blog"></a>
+                </div>
+
+                <!-- addinng heading with hyperlinked for negative impacts  -->
+                <div class="blog-text">
+                    <a href="https://www.medicalnewstoday.com/articles/negative-effects-of-technology#:~:text=Social%20media%20and%20mobile%20devices,on%20developing%20children%20and%20teenagers."
+                        class="blog-title">Negative Impact of Technology</a>
+
+                    <!-- writing about negative impacts of technology -->
+                    <p>Technology has resulted in negative consequences such as increased sedentary lifestyles,
+                        decreased social interaction,
+                        job loss, online bullying, and heightened stress and anxiety levels.The constant exposure to
+                        screens and the constant use of technology has also been linked to an increase in stress,
+                        anxiety, and depression. It is crucial to find a
+                        balance in technology use
+                        to minimize these negative effects.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Creating a div box for blog impact on seeling.... -->
+        <div class="blog-impact">
+            <!-- adding image for impact on seeling bonsai plant-->
+            <img src="image/bonsai plant impact.png" alt="blog" style="border-radius: 10%;"><br>
+            <!-- writing heading for impact of technology while seeling bonsai plant -->
+            <u>
+                <h3> Impact of technology while selling Bonsai Plant </h3>
+            </u>
+            <!-- writing about impact of technology while seeling bonsai plant -->
+            <p>In caring for bonsai trees, its beauty and peaceful essence will last a long time with proper
+                attention.
+                Often, people use the excuse that they cannot grow anything.
+                Actually, with practice and careful attention, bonsai trees will flourish even for the beginner.
+                It is difficult to provide a conclusion about bonsai plants as a whole,
+                as they are a diverse group of plants that have been cultivated for centuries for their small size
+                and aesthetic appeal.
+                However, it is clear that bonsai plants have a dedicated following of enthusiasts and are enjoyed by
+                people all over the world.
+                Technology has made it easier for people to learn about bonsai and to purchase plants,
+                and it has also helped to increase the popularity of these unique and beautiful plants.</p>
+        </div>
+
+
+        <!-- Creating a div box for blog overall conclussion -->
+        <div class="blog-overall_conclusion">
+
+            <!-- Writing heading for conclussion   -->
+            <u>
+                <h3> Overall Conclusion </h3>
+            </u>
+
+            <!-- writing conclusion  -->
+            <p>In caring for bonsai trees, its beauty and peaceful essence will last a long time with proper
+                attention.
+                Often, people use the excuse that they cannot grow anything.
+                Actually, with practice and careful attention, bonsai trees will flourish even for the beginner.
+                It is difficult to provide a conclusion about bonsai plants as a whole,
+                as they are a diverse group of plants that have been cultivated for centuries for their small size
+                and aesthetic appeal.
+                However, it is clear that bonsai plants have a dedicated following of enthusiasts and are enjoyed by
+                people all over the world.
+                Technology has made it easier for people to learn about bonsai and to purchase plants, and
+                it has also helped to increase the popularity of these unique and beautiful plants.
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- Starting Footer -->
+    <section class="footerr">
+
+        <footer class="section-p1">
+            <!-- Adding logo for footer -->
+            <div class="logo">
+                <img class="logo" src="image/logo.png" alt="">
+            </div>
+            <!-- adding some of the headings  for footer which include diffrent links -->
+            <div class="col1">
+                <u>
+                    <h2>About </h2>
+                </U>
+                <a href="#">Contact Us</a>
+                <a href="About_ us.html">About Us</a>
+                <a href="Blog_page.html">Blog</a>
+                <a href="Research_page.html">Research</a>
+                <a href="#">Gallery</a>
+            </div>
+            <!-- adding the headings  for footer which include diffrent links related to our payment and return system and help-->
+            <div class="col2">
+                <u>
+                    <h2>Help </h2>
+                </u>
+                <a href="#">Payment</a>
+                <a href="Proudcts_page.html">Products</a>
+                <a href="Feedback_form.html">Feedback</a>
+                <a href="#">Return Policy</a>
+            </div>
+
+            <!-- adding some of the headings  for footer which include social media links -->
+            <div class="col3">
+                <u>
+                    <h2>Follow us</h2>
+                </u>
+                <a href="https://www.facebook.com/">Facebook</a>
+                <a href="https://www.instagram.com/">Instagram</a>
+                <a href="https://twitter.com/">Twitter</a>
+                <a href="https://www.youtube.com/">Youtube</a>
+            </div>
+        </footer>
+    </section>
+
+</body>
+
+</html>

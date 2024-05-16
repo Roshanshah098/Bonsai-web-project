@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonsai Planet</title>
+    <link rel="stylesheet" href="css files/header.css">
+</head>
+<style>
+    /* keeping background for whole page */
+    body {
+        background-image: url(image/2.jpg);
+    }
+
+    /* creatimg a section for image and text part  */
+    .sections {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-image: url(image/2.jpg);
+        margin: 30px;
+        margin-top: 0px;
+        margin-left: 15%;
+        border-radius: 50px;
+    }
+
+    /* styling the texts */
+    .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 125px;
+        row-gap: 20px;
+
+    }
+
+    /* styling the texts having heading 1 */
+    .text h1 {
+        font-size: 90px;
+        font-weight: 700;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* styling the text having heading 1 and span */
+    .text h1 span {
+        color: rgb(11, 168, 103);
+
+    }
+
+    /* styling the texts having heading 2 */
+    .text h2 {
+        font-size: 35px;
+        font-weight: 600;
+    }
+
+    /* styling buttons present in the webpage */
+    .btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 70px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .btn1 {
+        width: 100px;
+        height: 40px;
+        background-color: rgb(11, 168, 103);
+        border-radius: 8px;
+        margin: 10px;
+    }
+
+    .btn2 {
+        width: 100px;
+        height: 40px;
+        background-color: rgb(11, 168, 103);
+        border-radius: 8px;
+        margin: 10px;
+    }
+
+    .banner-links {
+        margin: 15px;
+        padding: 10px;
+        border-bottom: 1px solid black;
+    }
+
+    /* styling images present in webpage */
+    .image img {
+        border-radius: 0px;
+        margin-top: 0px;
+        height: 520px;
+        width: 450px;
+        border-radius: 25px;
+    }
+
+    /* determining image slider box size */
+    .image {
+        width: 100%;
+        height: 100%;
+        /*
+box-sizing property allows us to include the padding and border in an element's total width and height.
+*/
+        box-sizing: border-box;
+        /*The overflow is clipped, and the rest of the content will be invisible*/
+        overflow: hidden;
+    }
+</style>
+
+
+<body>
+    <!-- These codes are for header -->
+    <div class="hero">
+        <div class="navbar">
+            <!-- adding logo for the navigation bar -->
+            <img class="logo" src="image/logo.png" alt="">
+            <!-- these are our diffrent pages internal links  -->
+            <ul class="shubham">
+                <li><a href="Home_page.html">Home</a></li>
+                <li><a href="Proudcts_page.html">Products</a></li>
+                <li><a href="Blog_page.html">Blog</a></li>
+                <li><a href="Research_page.html">Research</a></li>
+                <li><a href="Feedback_form.html">Feedback</a></li>
+                <li><a href="About_ us.html">About us</a></li>
+
+
+            </ul>
+        </div>
+    </div>
+    <!-- end of header  -->
+    <!-- creating conatiner for image slider and texts -->
+    <container>
+        <div class="sections">
+            <div class="text">
+                <h1>Bonsai<span>Planet</span></h1>
+                <h2 style="text-align: center;">Feel The Nature With Natural <br> Bonsai Plants.</h2>
+
+                <!-- adding buttons for the more and others  -->
+                <div class="btn">
+                    <a href="#"><button class="btn1"><b>More</button></a>
+                    <a href="#"><button class="btn2"><b>Other</button></a>
+                </div>
+                <!-- adding social media links  -->
+                <div class="banner-links">
+                    <a href="https://www.facebook.com"><img src="image/facebook.png" width="30" height="auto"></a>
+                    <a href="https://www.instagram.com"><img src="image/Instagram.png" width="30" height="auto"></a>
+                    <a href="https://twitter.com"><img src="image/twitter.png" width="30" height="auto"></a>
+                    <a href="https://www.youtube.com"><img src="image/YouTube.jpg" width="30" height="auto"></a>
+
+                </div>
+            </div>
+
+            <div class="image">
+                <div id=img>
+                    <img src="a.jpg">
+                </div>
+            </div>
+        </div>
+    </container>
+
+
+    <!-- Starting Footer -->
+    <section class="footerr">
+
+        <footer class="section-p1">
+            <!-- Adding logo for footer -->
+            <div class="logo">
+                <img class="logo" src="image/logo.png" alt="">
+            </div>
+            <!-- adding some of the headings  for footer which include diffrent links -->
+            <div class="col1">
+                <u>
+                    <h2>About </h2>
+                </U>
+                <a href="#">Contact Us</a>
+                <a href="About_ us.html">About Us</a>
+                <a href="Blog_page.html">Blog</a>
+                <a href="Research_page.html">Research</a>
+                <a href="#">Gallery</a>
+            </div>
+            <!-- adding the headings  for footer which include diffrent links related to our payment and return system and help-->
+            <div class="col2">
+                <u>
+                    <h2>Help </h2>
+                </u>
+                <a href="#">Payment</a>
+                <a href="Proudcts_page.html">Products</a>
+                <a href="Feedback_form.html">Feedback</a>
+                <a href="#">Return Policy</a>
+            </div>
+
+            <!-- adding some of the headings  for footer which include social media links -->
+            <div class="col3">
+                <u>
+                    <h2>Follow us</h2>
+                </u>
+                <a href="https://www.facebook.com/">Facebook</a>
+                <a href="https://www.instagram.com/">Instagram</a>
+                <a href="https://twitter.com/">Twitter</a>
+                <a href="https://www.youtube.com/">Youtube</a>
+            </div>
+        </footer>
+    </section>
+
+
+    <!-- JS for image slider -->
+    <script>
+        var images = ['a.jpg', 'b.jpg', 'c.jpg', 'd.jpg'];
+
+        var x = 0;
+        var imgs = document.getElementById('img')
+        //The setInterval() calls a function at theintervals (in milliseconds). 
+        setInterval(slider, 4000);
+
+        function slider() {
+
+            if (x < images.length) {
+                x = x + 1;
+            }
+
+            else {
+                x = 1;
+            }
+
+
+            imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+        }
+    </script>
+
+</body>
+
+</html>
